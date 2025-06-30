@@ -27,7 +27,7 @@ jobs:
       
       - name: Build Spigot 1.8.8
         run: |
-          wget -O BuildTools.jar https://download.getbukkit.org/spigot/buildtools.jar
+          wget -O BuildTools.jar https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifact/target/BuildTools.jar
           java -jar BuildTools.jar --rev 1.8.8
 
       - name: Build with Maven
