@@ -12,8 +12,10 @@ Compiling
 ---------
 
 1. Ensure that you have the project setup properly with Maven
-2. Compile from the parent project of Images that all modules are contained within
-3. Run `mvn clean package`
+2. Build the Spigot 1.21.1 dependencies using BuildTools:
+   `java -jar BuildTools.jar --rev 1.21.1 --compile craftbukkit --compile spigot --remapped`
+3. Compile from the parent project of Images that all modules are contained within
+4. Run `mvn clean package`
 
 Contributing
 ------------

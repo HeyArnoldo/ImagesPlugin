@@ -28,7 +28,7 @@ jobs:
       - name: Build Spigot 1.21.1
         run: |
           wget -O BuildTools.jar https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifact/target/BuildTools.jar
-          java -jar BuildTools.jar --rev 1.21.1
+          java -jar BuildTools.jar --rev 1.21.1 --compile craftbukkit --compile spigot --remapped
 
       - name: Build latest version
         run: mvn -pl Images-Core -am clean package -DskipTests
